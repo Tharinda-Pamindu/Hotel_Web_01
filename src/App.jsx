@@ -1,4 +1,5 @@
 import './index.css';
+import { ThemeProvider } from './components/ThemeContext';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import SearchBar from './components/SearchBar';
@@ -10,7 +11,7 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <>
+    <ThemeProvider>
       <Navbar />
       <main>
         <Hero />
@@ -21,7 +22,7 @@ function App() {
         <TravelExperiences />
       </main>
       <Footer />
-    </>
+    </ThemeProvider>
   );
 }
 
